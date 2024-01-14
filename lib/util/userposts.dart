@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class UserPost extends StatelessWidget {
   final String names;
@@ -15,6 +16,10 @@ class UserPost extends StatelessWidget {
                 width: 40,
                 height: 40,
                 decoration: BoxDecoration(
+                  image: const DecorationImage(
+                    image: AssetImage('assets/images/Ishema.jpg'),
+                    fit: BoxFit.cover,
+                  ),
                   shape: BoxShape.circle,
                   color: Colors.grey[400],
                 ),
@@ -43,7 +48,33 @@ class UserPost extends StatelessWidget {
         ),
         Container(
           height: 400,
-          color: Colors.grey[400],
+          decoration: const BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage('assets/images/Isange.jpg'),
+                  fit: BoxFit.cover)),
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(Icons.favorite_outline),
+              iconSize: 35,
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(FontAwesomeIcons.comment),
+              iconSize: 28,
+            ),
+            Transform.rotate(
+              angle: -100,
+              child: IconButton(
+                onPressed: () {},
+                icon: const Icon(FontAwesomeIcons.solidPaperPlane),
+                iconSize: 30,
+              ),
+            ),
+          ],
         ),
       ],
     );
