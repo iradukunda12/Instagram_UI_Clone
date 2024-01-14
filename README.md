@@ -1,2 +1,2 @@
 # Instagram_UI_Clone
-this instagram ui clone will be cloned Flutter/Dart
+I will be replicating the Instagram App in Flutter/Dart
