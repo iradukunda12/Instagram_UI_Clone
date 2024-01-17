@@ -91,16 +91,58 @@ class _HomepageState extends State<Homepage> {
             const UserPost(
               names: "kelly",
             ),
+            const UserPost(
+              names: "kevin",
+            ),
+            const UserPost(
+              names: "Kara_Sonia",
+            ),
           ],
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        
         type: BottomNavigationBarType.fixed,
+        selectedItemColor: Colors.black,
+        
+      
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: ""),
-          BottomNavigationBarItem(icon: Icon(Icons.search), label: ""),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: ""),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.home,
+                size: 35,
+              ),
+              label: ""),
+          BottomNavigationBarItem(
+              icon: Icon(
+                FontAwesomeIcons.magnifyingGlass,
+                size: 26,
+                color: Color.fromARGB(255, 69, 67, 67),
+              ),
+              label: ""),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.add,
+                size: 26,
+              ),
+              label: ""),
+          BottomNavigationBarItem(
+              icon: Icon(
+                FontAwesomeIcons.clapperboard,
+                size: 26,
+                color: Color.fromARGB(255, 35, 34, 34),
+              ),
+              label: ""),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person,
+                size: 26,
+                color: Color.fromARGB(255, 35, 34, 34),
+              ),
+              label: ""),
         ],
+        
+        
       ),
     );
   }
